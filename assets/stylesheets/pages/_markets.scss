@@ -1,0 +1,182 @@
+.markets {
+
+  &-details {
+    h3,
+    .button {
+      display: none;
+    }
+
+    .markets-group {
+      @include media (mobile) {
+        display: flex;
+        flex-flow: column;
+      }
+    }
+
+    .markets-image,
+    .markets-item-logoholder {
+      @include media (mobile) {
+        order: 2;
+        width: 100%;
+      }
+    }
+
+    .markets-item--url {
+      display: block;
+    }
+  }
+
+  &-item {
+    border-bottom: 1px solid $great-primary;
+    margin: 0 10px;
+    padding: 30px 0;
+
+    &--list {
+      padding: 5px 35px 15px;
+
+      @include media (mobile) {
+        padding: 5px 15px;
+      }
+    }
+
+    &-logo {
+      vertical-align: middle;
+      width: 185px;
+
+      @include breakpoint(tablet) {
+        width: 90%;
+      }
+    }
+
+    &-logoholder {
+      background: $white;
+      border: 1px solid $lighter-grey;
+      height: 140px;
+      width: 185px;
+
+      @include breakpoint(tablet) {
+        width: 90%;
+      }
+
+      @include media (mobile) {
+        height: 100%;
+        margin-bottom: 10px;
+      }
+    }
+
+    &--url {
+      display: none;
+    }
+
+
+    &-helper {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+
+  &-item--highlight {
+    margin-left: 7px;
+    padding: 20px 0;
+    position: relative;
+    width: 345px;
+
+
+    &--right {
+
+      @include breakpoint(tablet) {
+        padding: 0;
+      }
+
+      @include media (mobile) {
+        margin-top: 30px;
+      }
+
+    }
+
+    @include breakpoint(tablet) {
+      margin-left: 0;
+      padding: 10px 0;
+      width: 100%;
+    }
+
+    &:after {
+      background-color: $body-background-color;
+      border-left: 30px solid transparent;
+      border-top: 30px solid $flag-red;
+      bottom: 0;
+      content: '';
+      height: 0;
+      left: 0;
+      position: absolute;
+      width: 0;
+    }
+
+  }
+
+  &-item--highlight--section {
+    background-position: 0 10px;
+    background-size: 40px;
+    border-bottom: 1px solid $white;
+    margin: 0;
+    padding: 10px 0 15px;
+    position: relative;
+
+    dl {
+      padding-left: 50px;
+
+      @include media (mobile) {
+        padding-left: 70px;
+      }
+
+      .heading-large {
+        margin: 0;
+      }
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+      width: 80%;
+    }
+
+  }
+
+  &-info--left {
+    padding-left: 0;
+
+    p {
+      @include media(mobile) {
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+
+    @include media(mobile) {
+      padding: 0;
+    }
+
+  }
+
+  &-image {
+    @include media(mobile) {
+      float: left;
+      width: 40%;
+    }
+  }
+
+
+
+  &-info {
+    @include media (mobile) {
+      order: 1;
+      padding-bottom: 10px;
+    }
+  }
+
+}

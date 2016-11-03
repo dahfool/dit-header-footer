@@ -1,0 +1,31 @@
+.form {
+
+  &-group {
+    margin-bottom: 40px;
+  }
+
+  &-label {
+    @extend %font-regular;
+    @extend %light;
+    color: $grey;
+    font-family: $brand-font-family;
+    margin-bottom: 10px;
+  }
+
+  &-control {
+    @extend %light;
+    background: $light-stone;
+    border: 1px solid $secondary-text-colour;
+    font-family: $brand-font-family;
+    height: $form-field-height;
+    padding: 10px;
+
+    &:focus {
+      outline: 3px solid $aqua;
+    }
+  }
+
+  &-textarea {
+    height: 100%;
+  }
+}

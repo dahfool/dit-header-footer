@@ -1,0 +1,123 @@
+.detail-section {
+
+  &-header {
+    border-color: $great-primary;
+    border-top: 1px solid;
+    color: $great-primary;
+    margin-top: 65px;
+    padding-bottom: 30px;
+    position: relative;
+
+    &--dotted {
+      border: 1px dotted $great-primary;
+    }
+  }
+
+  &--info {
+    height: 200px;
+
+    @include breakpoint(tablet) {
+      height: auto;
+      margin-right: 0;
+      margin-top: 30px;
+      padding-bottom: 0;
+    }
+
+  }
+
+  &--terms {
+    border: 1px solid $great-primary;
+    margin-top: 65px;
+    padding-bottom: 30px;
+
+    @include breakpoint(tablet) {
+      margin-right: 0;
+      margin-top: 30px;
+    }
+  }
+
+  &-content {
+    margin: 0;
+    padding: 25px 50px 0;
+
+    @include breakpoint(tablet) {
+      padding: 30px 0;
+    }
+
+    &--head {
+      padding: 30px 20px;
+    }
+  }
+
+  h3 {
+    @extend %medium;
+    background: $bright-grey;
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding: 0 10px 0 0;
+    position: absolute;
+    top: -15px;
+
+    &.header-icon {
+      padding-left: 70px;
+      @include media (mobile) {
+        font-size: 18px;
+        padding-left: 55px;
+        padding-right: 5px;
+      }
+    }
+  }
+
+  &.detail-section--format {
+    dt,
+    dd {
+      @extend %font-regular;
+    }
+  }
+
+  dt,
+  &-title {
+    font-size: 19px;
+    padding: 20px 0 10px;
+
+    &.subtitle {
+      @extend %font-xxsmall;
+      @extend %medium;
+      padding-top: 10px;
+    }
+
+    &.hard--top {
+      padding-top: 0;
+    }
+
+    &.hard--bottom {
+      padding-bottom: 0;
+    }
+  }
+
+  dd {
+    line-height: 23px;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+
+  &-consider {
+    margin-right: 70px;
+  }
+}
+
+.detail-row-column {
+  height: 280px;
+  margin-top: 20px;
+  position: relative;
+
+  .button-section {
+    bottom: 20px;
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
+}

@@ -1,0 +1,115 @@
+$base-spacing-unit: 20px;
+$half-spacing-unit: $base-spacing-unit / 2;
+
+$image-path: '/static/images/';
+
+// BRAND COLOURS
+$great-primary: #1e1348;
+$great-secondary: #e41f13;
+$flag-red: #b00d23;
+$stone: #dfd5c5;
+$light-stone: #f6f4f1;
+$grey: #4a4a4a;
+$light-grey: #777;
+$lighter-grey: #dce0df;
+$bright-grey: #fafafa;
+$purple: #4f0b7b;
+$mid-blue: #00549f;
+$aqua: #007ea3;
+$navy: #003666;
+$turquoise: #3ed3ff;
+$graphite: #292929;
+$indigo: #110b29;
+$lighter-grey-opacity: rgba(220, 224, 223, .5);
+$loader-background: rgba(0, 0, 0, .5);
+
+// FONTS
+$brand-font-family: 'Roboto', sans-serif;
+
+//BODY
+$body-background-color: $bright-grey;
+$tap-highlight-color: rgba(0, 126, 163, .5);
+
+// HEADER
+$logo-width: 300px;
+
+$button-blue-bg-color: $mid-blue;
+$button-blue-bg-color--visited: $mid-blue;
+$button-blue-bg-color--hover: $navy;
+$button-blue-color: $white;
+$button-blue-color-hover: $white;
+$button-blue-outline: 0;
+
+$button-transparent-bg-color: $link-colour;
+$button-transparent-bg-color--visited: transparent;
+$button-transparent-bg-color--hover: transparent;
+$button-transparent-color: $link-colour;
+$button-transparent-color-hover: $link-colour;
+$button-transparent-outline: 0;
+
+$button-white-bg-color: $white;
+$button-white-bg-color--visited: $white;
+$button-white-bg-color--hover: $white;
+$button-white-color: $link-colour;
+$button-white-color-hover: $link-colour;
+$button-white-outline: 0;
+
+$button-grey-bg-color: $grey-3;
+$button-grey-bg-color--visited: $white;
+$button-grey-bg-color--hover: $white;
+$button-grey-color: $link-colour;
+$button-grey-color-hover: $link-colour;
+$button-grey-outline: 0;
+
+$button-border-bg-color: transparent;
+$button-border-bg-color--visited: transparent;
+$button-border-bg-color--hover: transparent;
+$button-border-color: $black;
+$button-border-color-hover: $black;
+$button-border-outline: 0;
+
+$button-red-bg-color: $flag-red;
+$button-red-bg-color--visited: $flag-red;
+$button-red-bg-color--hover: $great-secondary;
+$button-red-color: $white;
+$button-red-color-hover: $white;
+$button-red-outline: 0;
+
+
+$backgrounds: (
+  'grey' $grey-3,
+  'grey-dark' $grey-2,
+  'grey-darker' $secondary-text-colour,
+  'grey-darkest' $grey,
+  'blue' $link-colour,
+  'stone' $stone,
+  'light-stone' $light-stone,
+  'great-primary' $great-primary,
+  'indigo' $indigo
+);
+
+$backgrounds-image: (
+  'bank-account' 'icons/bank_account.svg',
+  'logistics' 'icons/logistics.svg',
+  'users' 'icons/registered_users.svg',
+  'fees' 'icons/fees.svg',
+  'commission' 'icons/commission.svg'
+);
+
+$button: (
+  'blue' $button-blue-bg-color $button-blue-bg-color--visited $button-blue-bg-color--hover $button-blue-color $button-blue-color-hover null $button-blue-outline,
+  'transparent' $button-transparent-bg-color $button-transparent-bg-color--visited $button-transparent-bg-color--hover $button-transparent-color $button-transparent-color-hover null $button-transparent-outline,
+  'white' $button-white-bg-color $button-white-bg-color--visited $button-white-bg-color--hover $button-white-color $button-white-color-hover null $button-white-outline,
+  'grey' $button-grey-bg-color $button-grey-bg-color--visited $button-grey-bg-color--hover $button-grey-color $button-grey-color-hover null $button-grey-outline,
+  'border' $button-border-bg-color $button-border-bg-color--visited $button-border-bg-color--hover $button-border-color $button-border-color-hover null $button-border-outline,
+  'red' $button-red-bg-color $button-red-bg-color--visited $button-red-bg-color--hover $button-red-color $button-red-color-hover null $button-red-outline
+);
+
+
+//FORMS
+$form-field-height: 40px;
+
+
+// Devices
+$tablet: 960px;
+$mobile: 400px;

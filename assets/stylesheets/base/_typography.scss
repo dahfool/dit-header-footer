@@ -1,0 +1,164 @@
+body,
+main,
+.main {
+  @extend %light;
+  background-color: $body-background-color;
+  color: $grey;
+  font-family: $brand-font-family;
+  font-size: 15px;
+  position: relative;
+}
+
+// FONT WEIGHT
+%light {
+  font-weight: 300;
+}
+
+%regular {
+  font-weight: 400;
+}
+
+%medium {
+  font-weight: 500;
+}
+
+// FONT SIZES
+%lede {
+  font-size: 24px;
+}
+
+%font-regular {
+  font-size: 18px;
+}
+
+%font-headline {
+  font-size: 19px;
+}
+
+%font-xxsmall {
+  font-size: 15px;
+}
+
+%font-xxxsmall {
+  font-size: 14px;
+}
+
+// HEADERS
+%h1 {
+  font-size: 48px;
+}
+
+%h2 {
+  font-size: 36px;
+}
+
+.font {
+
+  &-small {
+    @extend %font-regular;
+    font-family: $brand-font-family;
+  }
+
+  &-xxsmall {
+    @extend %font-xxsmall;
+  }
+
+  &-xxxsmall {
+    @extend %font-xxxsmall;
+  }
+
+  &-white {
+    color: $white;
+  }
+
+  &-brand {
+    color: $grey;
+  }
+
+  &-lighter-grey {
+    color: $lighter-grey;
+  }
+
+  &-purple {
+    color: $purple;
+  }
+
+  &-lig {
+    @extend %light;
+  }
+
+  &-reg {
+    @extend %regular;
+  }
+
+  &-med {
+    @extend %medium;
+  }
+}
+
+.h1 {
+  @extend %h1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  @extend %medium;
+}
+
+blockquote {
+  @extend %font-regular;
+  line-height: 25px;
+}
+
+p {
+  @extend %light;
+  line-height: 23px;
+}
+
+a {
+
+  @include prefix((tap-highlight-color: $tap-highlight-color), webkit);
+
+  &:focus {
+    background-color: transparent;
+    outline: 3px solid $aqua;
+  }
+}
+
+
+.link {
+  @extend %regular;
+  border-bottom: 1px solid;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 1px dashed;
+    color: $aqua;
+  }
+
+  &--white {
+    color: $white;
+
+    &:visited {
+      color: $lighter-grey;
+    }
+
+    &:hover {
+      color: $turquoise;
+    }
+  }
+
+  &--regular {
+    @extend %font-regular;
+  }
+
+  &--back {
+    display: inline-block;
+    margin-top: 21px;
+  }
+}

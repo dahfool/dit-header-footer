@@ -1,0 +1,127 @@
+.icon {
+
+  &-information {
+    background-image: url('#{$image-path}icon-information.png');
+  }
+
+  &-next {
+    position: relative;
+
+    &::after {
+      content: '\203A';
+      font-size: 35px;
+      font-weight: 900;
+      position: absolute;
+      right: -20px;
+      top: -15px;
+    }
+  }
+
+  &-ok {
+    background-image: url('#{$image-path}icons/tick_yes.svg');
+  }
+
+  &-users {
+    background-image: url('#{$image-path}icons/registered_users.svg');
+  }
+
+  &-products {
+    background-image: url('#{$image-path}icons/product.svg');
+  }
+
+  &-on-boarding {
+    background-image: url('#{$image-path}icons/onboarding.svg');
+  }
+
+  &-fees {
+    background-image: url('#{$image-path}icons/fees.svg');
+  }
+
+  &-next-step {
+    background-image: url('#{$image-path}icons/nextsteps.svg');
+  }
+
+  &-consider {
+    background-image: url('#{$image-path}icons/consideration.svg');
+  }
+
+  &-adviser {
+    background-image: url('#{$image-path}icons/adviser_tip.svg');
+  }
+
+  &-cross {
+    background-image: url('#{$image-path}icons/tick_no.svg');
+  }
+
+  &-menu {
+    background-image: url('#{$image-path}icons/menu.svg');
+  }
+
+  &-support {
+    background-image: url('#{$image-path}icons/support.svg');
+  }
+
+  &-logistics {
+    background-image: url('#{$image-path}icons/logistics.svg');
+  }
+
+  &-bank {
+    background-image: url('#{$image-path}icons/bank_account.svg');
+  }
+
+  &-translation {
+    background-image: url('#{$image-path}icons/translation.svg');
+
+    &--white {
+      background-image: url('#{$image-path}icons/translation-white.svg');
+    }
+  }
+
+  &-countries {
+    background-image: url('#{$image-path}icons/region.svg');
+
+    &--white {
+      background-image: url('#{$image-path}icons/region-white.svg');
+    }
+  }
+
+  &-header {
+    background-size: contain;
+    height: 45px;
+    position: absolute;
+    top: -30px;
+    width: 45px;
+    z-index: 1;
+    @include media (mobile) {
+      top: -28px;
+    }
+
+    &--left {
+      background-color: $bright-grey;
+      left: -1px;
+      padding-bottom: 5px;
+      width: 55px;
+
+      @include media (mobile) {
+        background-position: center center;
+        width: 40px;
+      }
+    }
+  }
+
+  &-small {
+    background-position: center;
+    height: 12px;
+    width: 15px;
+  }
+
+  &-details {
+    background-position: left bottom;
+    background-size: contain;
+    display: inline-block;
+    height: 15px;
+    margin-right: 5px;
+    width: 13px;
+  }
+
+}

@@ -1,0 +1,71 @@
+@each $name, $bg-color, $visited, $hover, $color, $color-hover, $bg-image, $outline in $button {
+  .button {
+    box-shadow: none;
+    font-weight: 900;
+
+    &-#{$name} {
+      background-color: $bg-color;
+      @if $bg-image != null {
+        background-image: url($bg-image);
+      }
+      color: $color;
+      outline: $outline;
+
+      &:link,
+      &:visited {
+        background-color: $visited;
+        color: $color-hover;
+      }
+
+      &:hover {
+        background-color: $hover;
+        color: $color-hover;
+      }
+
+      &:focus,
+      &:active {
+        background-color: $aqua;
+        outline: 0;
+      }
+    }
+  }
+}
+
+.button {
+  &-large {
+    @extend %lede;
+    padding: 18px 30px;
+  }
+
+  &-medium {
+    @extend %font-regular;
+    padding: 13px 38px;
+  }
+
+  &-close {
+    background-color: transparent;
+    font-weight: 300;
+    padding: 0;
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    &:before {
+      @extend %font-regular;
+      color: $flag-red;
+      content: 'X';
+      font-size: 24px;
+      left: -35px;
+      top: -5px;
+    }
+  }
+
+  &-start {
+    background-image: none;
+  }
+
+  @include media (mobile) {
+    text-align: center;
+  }
+}
